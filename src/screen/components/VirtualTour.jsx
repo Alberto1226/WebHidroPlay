@@ -8,11 +8,11 @@ import {
   keyframes,
 } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import welcome from "../../assets/img/secciones/fondo2.webp";
+import welcome from "../../assets/img/secciones/Fondo2.webp";
 
-import carouselImage1 from "../../assets/img/secciones/fondo2.webp";
-import carouselImage2 from "../../assets/img/secciones/fondo2.webp";
-import rightColumnImage from "../../assets/img/secciones/fondo2.webp";
+import carouselImage1 from "../../assets/img/secciones/Fondo2.webp";
+import carouselImage2 from "../../assets/img/secciones/Fondo2.webp";
+import rightColumnImage from "../../assets/img/secciones/Fondo2.webp";
 
 import bouncingSvg1 from "../../assets/svg/Bengi.svg";
 
