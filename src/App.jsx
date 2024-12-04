@@ -34,14 +34,13 @@ function App() {
     <div className="App">
       <HeaderBanner/>
       <Navbar/>
-      <Welcome />
-      <Objectives />
-      <VirtualTour />
-      <Modules />
-      <MobileApp />
-      <Comics />
-      
-      <Footer />
+      <Welcome/>
+      <Objectives/>
+      <VirtualTour/>
+      <Modules/>
+      <MobileApp/>
+      <Comics/>
+      <Footer/>
     </div>
   );
 }
