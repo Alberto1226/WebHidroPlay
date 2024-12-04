@@ -1,0 +1,348 @@
+/* General styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .welcome {
+  background: linear-gradient(to bottom, #2d3e50, #2a2a2a);
+}
+
+body.dark-mode .objectives {
+  background: linear-gradient(to bottom, #3e3e3e, #2a2a2a);
+}
+
+body.dark-mode .virtual-tour {
+  background: linear-gradient(to bottom, #2a2a2a, #1e1e1e);
+}
+
+body.dark-mode .modules {
+  background: linear-gradient(to bottom, #2f2f2f, #262626);
+}
+
+body.dark-mode .comics {
+  background: linear-gradient(to bottom, #373737, #2e2e2e);
+}
+
+body.dark-mode .mobile-app {
+  background: linear-gradient(to bottom, #2d3e50, #2a2a2a);
+}
+
+body.dark-mode .footer {
+  background-color: #1b1b1b;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15px !important;
+  background: #b84081;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+body.dark-mode .navbar {
+  background: #1f1f1f;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-button:hover {
+  background-color: #369bd1;
+  transform: scale(1.1);
+}
+
+/* Button styles */
+.btn {
+  background: #4ac3ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode .btn {
+  background: #1f1f1f;
+  color: white;
+}
+
+.btn:hover {
+  background: #369bd1;
+}
+
+/* Water animation */
+.virtual-tour::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/water.png');
+  opacity: 0.2;
+  z-index: -1;
+  animation: ripple 5s infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background: #4ac3ff;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  body.dark-mode .navbar-links {
+    background: #1f1f1f;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.section {
+  padding: 50px 20px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Animations */
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.welcome {
+  background: linear-gradient(to bottom, #4ac3ff, #a1dffb);
+  color: white;
+}
+
+.objectives {
+  background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+}
+
+.virtual-tour {
+  background: linear-gradient(to bottom, #f0f7ff, #d9ebff);
+}
+
+.modules {
+  background: linear-gradient(to bottom, #fff2e0, #ffe5cc);
+}
+
+.comics {
+  background: linear-gradient(to bottom, #f4ebf8, #e8dff0);
+}
+
+.mobile-app {
+  background: linear-gradient(to bottom, #e0ffe8, #ccffd1);
+}
+
+.footer {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+
+/*comics*/
+.comic-book {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px auto;
+  perspective: 1000px;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+  transform-origin: left;
+}
+
+.comic-book .page {
+  animation: flip 0.8s ease-in-out;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+/*footer*/
+/* Water Drop Animation */
+.water-drops {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.drop {
+  width: 20px;
+  height: 30px;
+  background: #4ac3ff;
+  border-radius: 50% 50% 60% 60%;
+  animation: bounce 2s infinite;
+}
+
+.drop:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.drop:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Modal styling */
+.MuiModal-root {
+  z-index: 1300;
+}
+
+/*buscar*/
+
+
+
+.banner-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-input {
+  width: 60%;
+  max-width: 500px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #b84081;
+  box-shadow: 0 0 5px rgba(184, 64, 129, 0.5);
+}
