@@ -43,7 +43,8 @@ const Navbar = () => {
       backgroundColor: '#b84081',
       height: '25px', // Altura personalizada
       marginTop: '60px',
-      //marginRight: '70px',
+      width:'90%',
+      marginRight: '10%',
       justifyContent: 'center', // Centra verticalmente
     }}>
       <Toolbar>

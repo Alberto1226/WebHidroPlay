@@ -232,7 +232,7 @@ function Footer() {
                   src={logos} // Cambia a la ruta de tu imagen
                   alt="Logo"
                   sx={{
-                    width: "auto",
+                    width: "50vw",
                     height: "auto",
                     objectFit: "contain",
                   }}
