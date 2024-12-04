@@ -31,7 +31,7 @@ function HeaderBanner() {
         top: 0, // Define la distancia desde la parte superior
         zIndex: 1000, // Asegura que esté por encima de otros elementos
         height: "60px", // Altura total del contenedor
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Sombra ligera para mejor separación
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", 
       }}
     >
       {/* Primera columna: Imagen pequeña (Logo) */}
