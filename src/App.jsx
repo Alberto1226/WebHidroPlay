@@ -9,7 +9,7 @@ import MobileApp from './screen/components/MovilApp';
 import Footer from './screen/components/Footer';
 import Navbar from './screen/components/NavBar/NavBar';
 import HeaderBanner from './screen/components/HeaderBanner';
-import Welcome from './screen/components/welcome';
+import Welcome from './screen/components/Welcome';
 
 
 
