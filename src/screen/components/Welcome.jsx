@@ -13,7 +13,7 @@ function Welcome() {
         backgroundPosition: "center", // Centra la imagen
         backgroundRepeat: "no-repeat", // Evita que la imagen se repita
         color: "white",
-        py: 8,
+        py: 5,
         minHeight: "75vh",
       }}
     >

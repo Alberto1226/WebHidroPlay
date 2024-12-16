@@ -47,7 +47,7 @@ function MobileApp() {
               src={logos} // Replace with your image path
               alt="Hydroplay Image"
               sx={{
-                maxWidth: "90%",
+                maxWidth: "100%", // Ensure it doesn't overflow
                 height: "auto",
                 borderRadius: 2,
                 mt: 2,
@@ -61,12 +61,12 @@ function MobileApp() {
                 wordWrap: "break-word", // Ensures text wraps within the container
                 overflow: "hidden",
                 wordBreak: "break-word", // Break words if they don't fit
-                maxWidth: "100%",fontFamily: "Montserrat, sans-serif", fontWeight: "bold"  // Ensures the text is contained within the container width
+                maxWidth: "100%", 
+                fontFamily: "Montserrat, sans-serif", fontWeight: "bold",
               }}
               component="h2"
               gutterBottom
               color="#9359b4"
-              
             >
               Aplicación Móvil
             </Typography>
@@ -80,8 +80,8 @@ function MobileApp() {
                 wordWrap: "break-word", // Ensures text wraps within the container
                 overflow: "hidden", // Prevents text from overflowing the container
                 wordBreak: "break-word", // Break words if they don't fit
-                marginLeft: { xs: "6vw", md: "6vw" }, // Adjust margin for smaller screens
-                marginTop: { xs: "2vw", md: "3.5vw" }, // Adjust margin for smaller screens
+                marginLeft: { xs: "6vw", md: "6vw" },
+                marginTop: { xs: "2vw", md: "3.5vw" },
               }}
             >
               También puedes disfrutar de HIDROPLAY desde tu dispositivo móvil
@@ -98,7 +98,7 @@ function MobileApp() {
                 wordWrap: "break-word", // Ensures text wraps within the container
                 overflow: "hidden", // Prevents text from overflowing the container
                 wordBreak: "break-word", // Break words if they don't fit
-                marginLeft: { xs: "6vw", md: "6vw" }, // Adjust margin for smaller screens
+                marginLeft: { xs: "6vw", md: "6vw" },
               }}
             >
               MICA Virtual o escanea el código QR con la cámara de tu
@@ -115,7 +115,7 @@ function MobileApp() {
                 wordWrap: "break-word", // Ensures text wraps within the container
                 overflow: "hidden", // Prevents text from overflowing the container
                 wordBreak: "break-word", // Break words if they don't fit
-                marginLeft: { xs: "6vw", md: "6vw" }, // Adjust margin for smaller screens
+                marginLeft: { xs: "6vw", md: "6vw" },
               }}
             >
               MICA Virtual o escanea el código QR con la cámara de tu
@@ -194,7 +194,7 @@ function MobileApp() {
               src={logo} // Replace with your image path
               alt="Hydroplay Image"
               sx={{
-                maxWidth: "100%",
+                maxWidth: "100%", // Ensure it fits within the container
                 height: "auto",
                 borderRadius: 2,
                 marginTop: "3vw",
@@ -209,7 +209,7 @@ function MobileApp() {
         sx={{
           marginLeft: "18vw",
           paddingRight: "20vw",
-          position: "relative", // Posición relativa para limitar elementos absolutos
+          position: "relative", // Position relative to limit absolute elements
         }}
       >
         <Box
@@ -221,6 +221,7 @@ function MobileApp() {
             bottom: { xs: "-40%", sm: "-70%" }, // Adjust bottom for mobile view
             left: { xs: "50%", sm: "30%" }, // Adjust left position for mobile
             width: { xs: "130px", sm: "180px" }, // Adjust size for mobile
+            display: {xs: 'none'},
             height: { xs: "130px", sm: "180px" }, // Adjust height for mobile
             animation: `${bounceAnimation} 2s infinite ease-in-out`,
           }}

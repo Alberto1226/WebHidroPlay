@@ -75,7 +75,7 @@ function Objectives() {
                   sx={{
                     position: "absolute", // Posicionamiento absoluto dentro del contenedor relativo
                     top: "-80px", // Superpón hacia arriba fuera del recuadro
-                    right: "-40px", // Superpón hacia el lado derecho fuera del recuadro
+                    right: "-15px", // Superpón hacia el lado derecho fuera del recuadro
                     width: "150px", // Tamaño del pin
                     height: "150px",
                   }}
@@ -121,7 +121,7 @@ function Objectives() {
           sx={{
             position: "absolute",
             top: { xs: "40%", sm: "5%" }, // Adjust top for smaller screens
-            right: { xs: "-4%", sm: "28%" }, // Adjust right for smaller screens
+            right: { xs: "8%", sm: "28%" }, // Adjust right for smaller screens
             width: "150px",
             height: "150px",
             animation: `${bounceAnimation} 3s infinite ease-in-out`,

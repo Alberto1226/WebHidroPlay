@@ -58,7 +58,7 @@ function HeaderBanner() {
           justifyItems: "center",
           height: "100%", // Asegura que ocupe toda la altura disponible
           width: "100%",
-          paddingRight: "4vw",
+          //paddingRight: "4vw",
         }}
       >
         {/* Primera fila con imágenes grandes */}
@@ -68,7 +68,7 @@ function HeaderBanner() {
             gap: "10px", // Mayor espaciado entre las imágenes
             alignItems: "center",
             justifyContent: "flex-end",
-            paddingRight: "4vw",
+            paddingRight: "9vw",
           }}
         >
           <img
@@ -93,9 +93,10 @@ function HeaderBanner() {
             value={searchTerm}
             onChange={handleSearch}
             style={{
-              width: "100%", // Ajusta el ancho del input
+              width: "90%", // Ajusta el ancho del input
               boxSizing: "border-box",
               borderRadius: "4px",
+              
             }}
           />
         </div>

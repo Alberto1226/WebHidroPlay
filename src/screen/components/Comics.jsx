@@ -113,6 +113,7 @@ function Comics() {
             alignItems: "center",
             left: { xs: "70%", sm: "80%" },
             top: { xs: "80%" },
+            display: {xs:'none'},
             transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
@@ -126,6 +127,7 @@ function Comics() {
               left: { xs: "10%", md: "-350%" }, // Adjust left positioning for mobile
               width: { xs: "120px", md: "160px" },
               height: { xs: "120px", md: "160px" },
+              display: {xs:'none'},
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
               transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
