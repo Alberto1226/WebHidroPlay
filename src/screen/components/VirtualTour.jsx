@@ -40,7 +40,7 @@ function VirtualTour() {
       }}
     >
       <Container maxWidth="md">
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h4" component="h2" gutterBottom sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}> 
           Recorrido Virtual
         </Typography>
         <Grid container spacing={4}>

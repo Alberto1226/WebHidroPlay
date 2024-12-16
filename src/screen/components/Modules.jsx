@@ -51,7 +51,8 @@ function Modules() {
             textAlign: "center",
             fontWeight: "bold",
             marginTop: {xs:4},
-            fontSize: { xs: "1.5rem", sm: "2.5rem", md: "3rem" }, // Adjust font size based on screen size
+            fontSize: { xs: "1.5rem", sm: "2.5rem", md: "3rem" }, 
+            fontFamily: "Montserrat, sans-serif", fontWeight: "bold"
           }}
         >
           Interacción con Módulos

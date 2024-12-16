@@ -58,7 +58,9 @@ function Comics() {
           gutterBottom
           sx={{
             fontSize: { xs: "2rem", sm: "3rem" }, // Smaller font size on mobile
-            textAlign: { xs: "center", sm: "left" }, // Center text on mobile, left-align on larger screens
+            textAlign: { xs: "center", sm: "left" },
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: "bold", // Center text on mobile, left-align on larger screens
           }}
         >
           Comics AR
@@ -82,8 +84,8 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            left: { xs: "-5%", md: "70%" }, 
-            top: { xs: "60%" }, 
+            left: { xs: "-5%", md: "70%" },
+            top: { xs: "60%" },
             transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
@@ -95,8 +97,8 @@ function Comics() {
               position: "absolute",
               bottom: { xs: "0%", md: "100%" }, // Adjust bottom positioning for mobile
               left: { xs: "50%", md: "60%" }, // Adjust left positioning for mobile
-              width: {xs:'120px', md:'160px'},
-              height: {xs:'120px', md:'160px'},
+              width: { xs: "120px", md: "160px" },
+              height: { xs: "120px", md: "160px" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
               transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
@@ -109,8 +111,8 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            left: { xs: "70%", sm: "80%" }, 
-            top: { xs: "80%" }, 
+            left: { xs: "70%", sm: "80%" },
+            top: { xs: "80%" },
             transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
@@ -122,8 +124,8 @@ function Comics() {
               position: "absolute",
               bottom: { xs: "10%", md: "200%" }, // Adjust bottom positioning for mobile
               left: { xs: "10%", md: "-350%" }, // Adjust left positioning for mobile
-              width: {xs:'120px', md:'160px'},
-              height: {xs:'120px', md:'160px'},
+              width: { xs: "120px", md: "160px" },
+              height: { xs: "120px", md: "160px" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
               transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
@@ -150,7 +152,7 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            left: { xs: "-5%" }, 
+            left: { xs: "-5%" },
             top: "90%",
             mt: 4,
           }}
@@ -163,8 +165,8 @@ function Comics() {
               position: "absolute",
               bottom: "200%",
               left: "-350%",
-              width: {xs:'120px', md:'160px'},
-              height: {xs:'120px', md:'160px'},
+              width: { xs: "120px", md: "160px" },
+              height: { xs: "120px", md: "160px" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
             }}
           />
@@ -176,7 +178,7 @@ function Comics() {
             justifyContent: "center",
             alignItems: "center",
             top: "90%",
-            left: {xs:'70%' , md:'80%'},
+            left: { xs: "70%", md: "80%" },
             mt: 4,
           }}
         >
@@ -187,9 +189,10 @@ function Comics() {
             sx={{
               position: "absolute",
               bottom: "200%",
+              display: "none",
               left: "-350%",
-              width: {xs:'120px', md:'160px'},
-              height: {xs:'120px', md:'160px'},
+              width: { xs: "120px", md: "160px" },
+              height: { xs: "120px", md: "160px" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
             }}
           />

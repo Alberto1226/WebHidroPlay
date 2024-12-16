@@ -37,17 +37,17 @@ function Objectives() {
         }}
       >
         <Container maxWidth="md">
-          <Typography variant="h4" component="h2" gutterBottom>
+          <Typography variant="h4" component="h2" gutterBottom sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}>
             Objetivos
           </Typography>
           <Grid container spacing={4}>
             {/* Primera columna: Texto */}
             <Grid item xs={12} sm={6}>
-              <Typography variant="body1" paragraph>
+              <Typography variant="body1" paragraph sx={{ fontFamily: "Montserrat, sans-serif"}}>
                 Dar a conocer la información sobre la cultura del cuidado del
                 agua para evitar su contaminación y desperdicio.
               </Typography>
-              <Typography variant="body1" paragraph>
+              <Typography variant="body1" paragraph sx={{ fontFamily: "Montserrat, sans-serif"}}>
                 Generar conciencia a través de actividades educativas y de
                 entretenimiento interactivo.
               </Typography>
@@ -129,7 +129,7 @@ function Objectives() {
         />
 
         {/* Grid con tarjetas */}
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={4} justifyContent="center" sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}>
           <ImageCard
             imageSrc={image2}
             altText="Hidrobot"
@@ -141,6 +141,7 @@ function Objectives() {
         educativas y de entretenimiento
         interactivo/digital."
             textColor="brown"
+            sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />
           <ImageCard
             imageSrc={image3}
@@ -151,6 +152,7 @@ function Objectives() {
         reforzar sus conocimientos en la cultura 
         del agua."
             textColor="blue"
+            sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />
           <ImageCard
             imageSrc={image4}
@@ -160,6 +162,7 @@ function Objectives() {
         comunique y re eje los bene cios del 
         cuidado del agua en la comunidad."
             textColor="green"
+            sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />
         </Grid>
       </Container>

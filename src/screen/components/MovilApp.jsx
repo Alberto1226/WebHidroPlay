@@ -61,11 +61,12 @@ function MobileApp() {
                 wordWrap: "break-word", // Ensures text wraps within the container
                 overflow: "hidden",
                 wordBreak: "break-word", // Break words if they don't fit
-                maxWidth: "100%", // Ensures the text is contained within the container width
+                maxWidth: "100%",fontFamily: "Montserrat, sans-serif", fontWeight: "bold"  // Ensures the text is contained within the container width
               }}
               component="h2"
               gutterBottom
               color="#9359b4"
+              
             >
               Aplicación Móvil
             </Typography>

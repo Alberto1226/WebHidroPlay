@@ -47,7 +47,7 @@ const Navbar = () => {
       justifyContent: 'center', // Centra verticalmente
     }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, fontFamily: "Montserrat, sans-serif"}}>
           HYDROPLAY
         </Typography>
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

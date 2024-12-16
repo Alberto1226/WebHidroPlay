@@ -12,3 +12,7 @@ section{
   width: 100%;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat font */
+  font-weight: bold;  /* Ensure the font is bold */
+}

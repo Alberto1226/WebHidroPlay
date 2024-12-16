@@ -21,15 +21,23 @@ function Welcome() {
         <Grid container spacing={4} alignItems="center">
           {/* Text and Button Section */}
           <Grid item xs={12} md={8}>
-            <Typography variant="h3" component="h1" gutterBottom>
-              Bienvenidos a HYDROPLAY
+            <Typography
+              variant="h3"
+              component="h1"
+              gutterBottom
+              sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
+            >
+              BIENVENIDOS
             </Typography>
-            <Typography variant="body1" paragraph>
-              Un lugar donde podrás divertirte mientras aprendes sobre el
-              cuidado del agua.
+            <Typography
+              variant="body1"
+              paragraph
+              sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
+            >
+              Bienvenidos a HYDROPLAY Un lugar donde podrás divertirte mientras
+              aprendes sobre el cuidado del agua.
             </Typography>
 
-            
             <Box
               component="img"
               src={logos} // Replace with your image path
