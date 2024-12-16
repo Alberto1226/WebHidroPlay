@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Typography, Box, Button } from "@mui/material";
-import welcome from "../../assets/img/secciones/BannerPrincipal.webp";
+import { Container, Typography, Box, Button, Grid } from "@mui/material";
+import welcome from "../../assets/img/secciones/fondo_banner1.png";
+import logo from "../../assets/png/logo_banner.png";
+import logos from "../../assets/png/iconos_banner.png";
 function Welcome() {
   return (
     <Box
@@ -12,41 +14,49 @@ function Welcome() {
         backgroundRepeat: "no-repeat", // Evita que la imagen se repita
         color: "white",
         py: 8,
-        minHeight: '75vh',
+        minHeight: "75vh",
       }}
     >
-      <Container maxWidth="md" sx={{ textAlign: "center" }}>
-        <Typography variant="h3" component="h1" gutterBottom>
-          Bienvenidos a HYDROPLAY
-        </Typography>
-        <Typography variant="body1" paragraph>
-          Un lugar donde podrás divertirte mientras aprendes sobre el cuidado
-          del agua.
-        </Typography>
-        {/* <Typography variant="body1" paragraph>
-          Dar a conocer la información sobre la cultura del cuidado del agua
-          para evitar su contaminación y desperdicio. Poniéndola en práctica en
-          su entorno, fortaleciendo la reflexión con actividades educativas y de
-          entretenimiento interactivo/digital.
-        </Typography>
-        <Typography variant="body1" paragraph>
-          Generar conciencia en los niños y público en general a través de
-          módulos interactivos y juegos, que los ayudarán a reforzar sus
-          conocimientos en la cultura del agua.
-        </Typography>
-        <Typography variant="body1" paragraph>
-          Posicionar a HIDROPLAY como referencia nacional, como museo
-          interactivo que comunique y refleje los beneficios del cuidado del
-          agua en la comunidad.
-        </Typography> */}
-        <Button
-          variant="contained"
-          color="secondary"
-          size="large"
-          sx={{ mt: 4 }}
-        >
-          Explorar más
-        </Button>
+      <Container maxWidth="xl" sx={{ textAlign: "center" }}>
+        <Grid container spacing={4} alignItems="center">
+          {/* Text and Button Section */}
+          <Grid item xs={12} md={8}>
+            <Typography variant="h3" component="h1" gutterBottom>
+              Bienvenidos a HYDROPLAY
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Un lugar donde podrás divertirte mientras aprendes sobre el
+              cuidado del agua.
+            </Typography>
+
+            
+            <Box
+              component="img"
+              src={logos} // Replace with your image path
+              alt="Hydroplay Image"
+              sx={{
+                maxWidth: "90%",
+                height: "auto",
+                borderRadius: 2,
+                mt: 2,
+              }}
+            />
+          </Grid>
+
+          {/* Image Section */}
+          <Grid item xs={12} md={4}>
+            <Box
+              component="img"
+              src={logo} // Replace with your image path
+              alt="Hydroplay Image"
+              sx={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: 2,
+              }}
+            />
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Box, Grid, keyframes  } from "@mui/material";
+import { Container, Typography, Box, Grid, keyframes } from "@mui/material";
 import welcome from "../../assets/img/secciones/fondo1.webp";
 import grids from "../../assets/img/secciones/fondo_Modulos.webp";
 import pinIcon from "../../assets/svg/hidrobot.svg";
@@ -12,7 +12,6 @@ import ImageCard from "./Generales/Cards";
 
 import bouncingSvg1 from "../../assets/svg/goti.svg"; // Imagen SVG que rebota
 import bouncingSvg2 from "../../assets/svg/leon.svg"; // Imagen SVG que rebota
-
 
 function Objectives() {
   const bounceAnimation = keyframes`
@@ -34,7 +33,7 @@ function Objectives() {
           backgroundRepeat: "no-repeat", // Evita que la imagen se repita
           color: "white",
           py: 8,
-          minHeight: '20vh',
+          minHeight: "20vh",
         }}
       >
         <Container maxWidth="md">
@@ -79,7 +78,6 @@ function Objectives() {
                     right: "-40px", // Superpón hacia el lado derecho fuera del recuadro
                     width: "150px", // Tamaño del pin
                     height: "150px",
-                   
                   }}
                 />
               </Box>
@@ -108,21 +106,22 @@ function Objectives() {
           alt="Bouncing SVG 1"
           sx={{
             position: "absolute",
-            top: "5%",
-            left: "25%",
+            top: { xs: "5%", sm: "5%" }, // Adjust top for smaller screens
+            left: { xs: "-8%", sm: "25%" }, // Adjust left for smaller screens
             width: "150px",
             height: "150px",
             animation: `${bounceAnimation} 2s infinite ease-in-out`,
           }}
         />
+
         <Box
           component="img"
           src={bouncingSvg2}
           alt="Bouncing SVG 2"
           sx={{
             position: "absolute",
-            top: "5%",
-            right: "28%",
+            top: { xs: "40%", sm: "5%" }, // Adjust top for smaller screens
+            right: { xs: "-4%", sm: "28%" }, // Adjust right for smaller screens
             width: "150px",
             height: "150px",
             animation: `${bounceAnimation} 3s infinite ease-in-out`,

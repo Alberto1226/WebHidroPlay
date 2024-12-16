@@ -51,10 +51,28 @@ function Comics() {
       }}
     >
       <Box sx={{ ml: 2, position: "relative" }}>
-        <Typography variant="h3" color="#9359b4" component="h2" gutterBottom>
+        <Typography
+          variant="h3"
+          color="#9359b4"
+          component="h2"
+          gutterBottom
+          sx={{
+            fontSize: { xs: "2rem", sm: "3rem" }, // Smaller font size on mobile
+            textAlign: { xs: "center", sm: "left" }, // Center text on mobile, left-align on larger screens
+          }}
+        >
           Comics AR
         </Typography>
-        <Typography variant="body1" color="#4972cf" paragraph>
+
+        <Typography
+          variant="body1"
+          color="#4972cf"
+          paragraph
+          sx={{
+            fontSize: { xs: "0.9rem", sm: "1rem" }, // Smaller font size on mobile
+            textAlign: { xs: "center", sm: "left" }, // Center text on mobile, left-align on larger screens
+          }}
+        >
           Disfruta de los Comics AR de HIDROPLAY desde tu dispositivo móvil.
         </Typography>
 
@@ -64,7 +82,9 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            left: '70%',
+            left: { xs: "-5%", md: "70%" }, 
+            top: { xs: "60%" }, 
+            transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
           <Box
@@ -73,35 +93,39 @@ function Comics() {
             alt="Bouncing SVG 1"
             sx={{
               position: "absolute",
-              bottom: "100%",
-              left: "60%",
-              width: "160px",
-              height: "160px",
+              bottom: { xs: "0%", md: "100%" }, // Adjust bottom positioning for mobile
+              left: { xs: "50%", md: "60%" }, // Adjust left positioning for mobile
+              width: {xs:'120px', md:'160px'},
+              height: {xs:'120px', md:'160px'},
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
+              transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
           />
         </Box>
+
         <Box
           sx={{
             position: "absolute",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            left: '80%',
-            
+            left: { xs: "70%", sm: "80%" }, 
+            top: { xs: "80%" }, 
+            transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
           <Box
             component="img"
             src={bouncingSvg2}
-            alt="Bouncing SVG 1"
+            alt="Bouncing SVG 2"
             sx={{
               position: "absolute",
-              bottom: "200%",
-              left: "-350%",
-              width: "160px",
-              height: "160px",
+              bottom: { xs: "10%", md: "200%" }, // Adjust bottom positioning for mobile
+              left: { xs: "10%", md: "-350%" }, // Adjust left positioning for mobile
+              width: {xs:'120px', md:'160px'},
+              height: {xs:'120px', md:'160px'},
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
+              transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
           />
         </Box>
@@ -126,7 +150,8 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            top:'90%',
+            left: { xs: "-5%" }, 
+            top: "90%",
             mt: 4,
           }}
         >
@@ -138,8 +163,8 @@ function Comics() {
               position: "absolute",
               bottom: "200%",
               left: "-350%",
-              width: "160px",
-              height: "160px",
+              width: {xs:'120px', md:'160px'},
+              height: {xs:'120px', md:'160px'},
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
             }}
           />
@@ -150,8 +175,8 @@ function Comics() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            top:'90%',
-            left: '85%',
+            top: "90%",
+            left: {xs:'70%' , md:'80%'},
             mt: 4,
           }}
         >
@@ -163,8 +188,8 @@ function Comics() {
               position: "absolute",
               bottom: "200%",
               left: "-350%",
-              width: "160px",
-              height: "160px",
+              width: {xs:'120px', md:'160px'},
+              height: {xs:'120px', md:'160px'},
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
             }}
           />
