@@ -53,32 +53,33 @@ function HeaderBanner() {
       {/* Segunda columna: Imágenes y campo de búsqueda */}
       <div
         style={{
-          gridTemplateRows: "1fr 1fr", // Divide en dos filas
-          alignItems: "center",
-          justifyItems: "center",
+          //gridTemplateRows: "1fr 1fr", // Divide en dos filas
+          alignItems: "right",
+          justifyItems: "right",
           height: "100%", // Asegura que ocupe toda la altura disponible
           width: "100%",
+          
           //paddingRight: "4vw",
         }}
       >
         {/* Primera fila con imágenes grandes */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             gap: "10px", // Mayor espaciado entre las imágenes
             alignItems: "center",
             justifyContent: "flex-end",
-            paddingRight: "9vw",
+            //paddingRight: "1vw",
           }}
-        >
+        > */}
           <img
             src={logos} // Sustituye con la URL del ícono 1
             alt="Icono 1"
-            style={{ width: "30vw", height: "35px" }}
+            style={{ width: "30vw", height: "50px", marginRight: "2vw", }}
           />
         </div>
         {/* Segunda fila: Campo de búsqueda */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -99,8 +100,8 @@ function HeaderBanner() {
               
             }}
           />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </section>
   );
 }

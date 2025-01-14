@@ -1,0 +1,103 @@
+{
+    "modulos": [
+      {
+        "nombre": "Módulo 1",
+        "src": "mod1.png",
+        "alt": "Imagen 1",
+        "url": "https://example.com/iframe1",
+        "descripcion": "Descripción del Módulo 1"
+      },
+      {
+        "nombre": "Módulo 2",
+        "src": "mod2.png",
+        "alt": "Imagen 2",
+        "url": "https://example.com/iframe2",
+        "descripcion": "Descripción del Módulo 2"
+      },
+      {
+        "nombre": "Módulo 3",
+        "src": "mod3.png",
+        "alt": "Imagen 3",
+        "url": "https://example.com/iframe3",
+        "descripcion": "Descripción del Módulo 3"
+      },
+      {
+        "nombre": "Módulo 4",
+        "src": "mod4.png",
+        "alt": "Imagen 4",
+        "url": "https://example.com/iframe4",
+        "descripcion": "Descripción del Módulo 4"
+      },
+      {
+        "nombre": "Módulo 5",
+        "src": "mod5.png",
+        "alt": "Imagen 5",
+        "url": "https://example.com/iframe5",
+        "descripcion": "Descripción del Módulo 5"
+      },
+      {
+        "nombre": "Módulo 6",
+        "src": "mod6.png",
+        "alt": "Imagen 6",
+        "url": "https://example.com/iframe6",
+        "descripcion": "Descripción del Módulo 6"
+      },
+      {
+        "nombre": "Módulo 7",
+        "src": "mod7.png",
+        "alt": "Imagen 7",
+        "url": "https://example.com/iframe7",
+        "descripcion": "Descripción del Módulo 7"
+      },
+      {
+        "nombre": "Módulo 8",
+        "src": "mod8.png",
+        "alt": "Imagen 8",
+        "url": "https://example.com/iframe8",
+        "descripcion": "Descripción del Módulo 8"
+      }
+    ],
+    "comics": [
+      {
+        "title": "Comic 1",
+        "image": "appmovil.webp",
+        "pages": ["appmovil.webp", "page1.webp", "page2.webp"]
+      },
+      {
+        "title": "Comic 2",
+        "image": "appmovil.webp",
+        "pages": ["page1.webp", "page2.webp"]
+      },
+      {
+        "title": "Comic 3",
+        "image": "appmovil.webp",
+        "pages": ["appmovil.webp", "page1.webp", "page2.webp"]
+      }
+    ],
+    "recorridoVirtual": {
+    "carouselImages": [
+      {
+        "src": "carouselImage1.webp",
+        "alt": "Carrusel 1"
+      },
+      {
+        "src": "carouselImage2.webp",
+        "alt": "Carrusel 2"
+      }
+    ],
+    "rightColumnImage": {
+      "src": "rightColumnImage.webp",
+      "alt": "Recorrido Virtual"
+    },
+    "description": "Explora el museo interactivo con nuestro recorrido virtual.",
+    "cta": {
+      "text": "¡Vamos!",
+      "url": "#virtual-tour"
+    },
+    "bouncingSvg": {
+      "src": "bouncingSvg1.svg",
+      "alt": "Imagen animada"
+    }
+  }
+  }
+  
