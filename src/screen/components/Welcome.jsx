@@ -14,7 +14,7 @@ function Welcome() {
         backgroundRepeat: "no-repeat", // Evita que la imagen se repita
         color: "white",
         py: 5,
-        minHeight: "75vh",
+        minHeight: "85vh",
       }}
     >
       <Container maxWidth="xl" sx={{ textAlign: "center" }}>

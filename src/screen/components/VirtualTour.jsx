@@ -36,7 +36,7 @@ function VirtualTour() {
         backgroundRepeat: "no-repeat",
         color: "white",
         py: 8,
-        minHeight: '75vh',
+        minHeight: '85vh',
       }}
     >
       <Container maxWidth="md">
@@ -95,7 +95,7 @@ function VirtualTour() {
               </Carousel>
               <Box mt={2} textAlign="center">
                 <Typography variant="body1" color="white">
-                  Explora el museo interactivo con nuestro recorrido virtual.
+                  Explora el museo interactivo con nuestro recorrido virtual desde la comodidad de tu casa.
                 </Typography>
                 <Typography variant="body1" color="white" fontWeight="bold">
                   ¡Una experiencia única te espera!

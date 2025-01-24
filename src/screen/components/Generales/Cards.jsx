@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 
-function ImageCard({ imageSrc, altText, description, textColor = "textSecondary" }) {
+function ImageCard({ title, imageSrc, altText, description, textColor = "textSecondary" }) {
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Box textAlign="center" display="flex" flexDirection="column" alignItems="center">
@@ -18,6 +18,11 @@ function ImageCard({ imageSrc, altText, description, textColor = "textSecondary"
             margin: "0 auto", // Centra la imagen horizontalmente
           }}
         />
+        {title && (
+          <Typography variant="h6" color="textPrimary" fontWeight="bold" mt={2}>
+            {title}
+          </Typography>
+        )}
         <Typography variant="body2" color={textColor} mt={2}>
           {description}
         </Typography>

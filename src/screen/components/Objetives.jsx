@@ -32,68 +32,90 @@ function Objectives() {
           backgroundPosition: "center", // Centra la imagen
           backgroundRepeat: "no-repeat", // Evita que la imagen se repita
           color: "white",
-          py: 8,
-          minHeight: "20vh",
+          py: 2,
+          minHeight: "8vh",
         }}
       >
         <Container maxWidth="md">
-          <Typography variant="h4" component="h2" gutterBottom sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}>
-            Objetivos
-          </Typography>
-          <Grid container spacing={4}>
-            {/* Primera columna: Texto */}
-            <Grid item xs={12} sm={6}>
-              <Typography variant="body1" paragraph sx={{ fontFamily: "Montserrat, sans-serif"}}>
-                Dar a conocer la información sobre la cultura del cuidado del
-                agua para evitar su contaminación y desperdicio.
-              </Typography>
-              <Typography variant="body1" paragraph sx={{ fontFamily: "Montserrat, sans-serif"}}>
-                Generar conciencia a través de actividades educativas y de
-                entretenimiento interactivo.
-              </Typography>
-            </Grid>
-
-            {/* Segunda columna: Recuadro con imagen */}
-            <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12}>
+            <Box
+              sx={{
+                position: "relative",
+                backgroundColor: "#fff",
+                borderRadius: "8px",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                padding: { xs: 2, sm: 3, md: 4 },
+                overflow: "hidden",
+              }}
+            >
               <Box
                 sx={{
-                  position: "relative", // Hace que el recuadro sea el contenedor padre para posicionar elementos hijos absolutos
-                  backgroundImage: `url(${Nota})`, // Imagen de fondo del recuadro
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  height: "230px", // Altura del recuadro
-                  borderRadius: "8px", // Bordes redondeados
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Sombra del recuadro
+                  backgroundColor: "#f3f4f6", // Fondo gris claro
+                  padding: { xs: 2, sm: 3, md: 4 },
+                  borderRadius: "8px",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                  position: "relative",
                 }}
               >
-                {/* Pin superpuesto en el lateral superior derecho */}
+                <Typography
+                  component="p"
+                  sx={{
+                    fontFamily: "Montserrat, sans-serif",
+                    color: "#b84081",
+                    fontSize: {
+                      xs: "0.8rem",
+                      sm: "0.9rem",
+                      md: "1rem",
+                      lg: "1.1rem",
+                    }, // Tamaño de letra responsive
+                    lineHeight: { xs: "1.4", sm: "1.5", md: "1.6" },
+                    textAlign: "justify",
+                    wordBreak: "break-word",
+                  }}
+                >
+                  HydroPlay es un museo para El Cuidado del Agua, es un espacio
+                  interactivo con herramientas virtuales que lo hacen único en
+                  México de su tipo. Permitiendo acercar el museo a una
+                  experiencia virtual mediante el uso de tecnologías con
+                  funcionalidad en espacios o áreas temáticas que permitan
+                  fortalecer la cultura del Cuidado del Agua en el estado. Hoy
+                  hacer conciencia sobre la sobreexplotación del agua y generar
+                  una cultura del cuidado del agua requiere espacios novedosos,
+                  divertidos donde la tecnología apoye para poder penetrar y
+                  hacer conciencia en la cultura del agua.
+                </Typography>
+
                 <Box
                   component="img"
-                  src={pinIcon} // Imagen del pin
+                  src={pinIcon}
                   alt="Pin"
                   sx={{
-                    position: "absolute", // Posicionamiento absoluto dentro del contenedor relativo
-                    top: "-80px", // Superpón hacia arriba fuera del recuadro
-                    right: "-15px", // Superpón hacia el lado derecho fuera del recuadro
-                    width: "150px", // Tamaño del pin
-                    height: "150px",
+                    position: "absolute",
+                    top: { md: "-70px" },
+                    right: { md: "-50px" },
+                    width: { md: "140px", lg: "140px" },
+                    height: {
+                     
+                      md: "140px",
+                      lg: "140px",
+                    },
+                    
                   }}
                 />
               </Box>
-            </Grid>
+            </Box>
           </Grid>
         </Container>
       </Box>
       <Container
         sx={{
-          marginTop: "4vw",
+          //marginTop: "1vw",
           backgroundImage: `url(${grids})`,
           backgroundSize: "cover", // Asegura que la imagen cubra todo el fondo
           backgroundPosition: "center", // Centra la imagen
           backgroundRepeat: "no-repeat", // Evita que la imagen se repita
           color: "white",
-          py: 8,
+          py: 5,
           minHeight: "23rem",
           position: "relative", // Necesario para posicionar los elementos rebote
           overflow: "hidden", // Oculta contenido fuera del contenedor
@@ -129,38 +151,65 @@ function Objectives() {
         />
 
         {/* Grid con tarjetas */}
-        <Grid container spacing={4} justifyContent="center" sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}>
+        <Grid
+          container
+          spacing={4}
+          justifyContent="center"
+          sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
+        >
           <ImageCard
             imageSrc={image2}
             altText="Hidrobot"
+            title={"Objetivos"}
+            //     description="Dar a conocer la información sobre la
+            // cultura del cuidado del agua para evitar
+            // su contaminación y desperdicio.
+            // Poniéndola en práctica en su entorno,
+            // fortaleciendo la re exión con actividades
+            // educativas y de entretenimiento
+            // interactivo/digital."
             description="Dar a conocer la información sobre la
-        cultura del cuidado del agua para evitar 
-        su contaminación y desperdicio.
-        Poniéndola en práctica en su entorno,
-        fortaleciendo la re exión con actividades
-        educativas y de entretenimiento
-        interactivo/digital."
+            cultura del cuidado del agua para evitar
+            su contaminación y desperdicio.
+            Poniéndola en práctica en su entorno,
+            fortaleciendo la re exión con actividades
+            educativas y de entretenimiento
+            interactivo/digital. Para educar y sensibilizar al público en general, especialmente a las nuevas generaciones, sobre la importancia del agua como recurso natural y la necesidad de su cuidado y uso sostenible."
             textColor="brown"
             sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />
           <ImageCard
             imageSrc={image3}
             altText="Hidrobot"
-            description="Generar conciencia en los niños y público 
-        en general a través de módulos
-        interactivos y juegos, que los ayudarán a 
-        reforzar sus conocimientos en la cultura 
-        del agua."
+            title={"Misión"}
+            //     description="Generar conciencia en los niños y público
+            // en general a través de módulos
+            // interactivos y juegos, que los ayudarán a
+            // reforzar sus conocimientos en la cultura
+            // del agua."
+            description="Generar conciencia en los niños y público
+            en general a través de módulos
+            interactivos y juegos, que los ayudarán a
+            reforzar sus conocimientos en la cultura
+            del agua. Ser un referente digital en la difusión de conocimientos sobre el ciclo del agua, su importancia para la vida, los desafíos que enfrenta y las soluciones posibles.
+Promover la cultura del cuidado del agua a través de contenidos atractivos, interactivos y accesibles, fomentando la participación activa de los usuarios."
             textColor="blue"
             sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />
           <ImageCard
             imageSrc={image4}
             altText="Hidrobot"
-            description="Posicionar a HIDROPLAY como referencia 
-        nacional, como museo interactivo que
-        comunique y re eje los bene cios del 
-        cuidado del agua en la comunidad."
+            title={"Visión"}
+            //     description="Posicionar a HIDROPLAY como referencia
+            // nacional, como museo interactivo que
+            // comunique y refleje los beneficios del
+            // cuidado del agua en la comunidad."
+            description="Posicionar a HIDROPLAY como referencia
+            nacional, como museo interactivo que
+            comunique y refleje los beneficios del
+            cuidado del agua en la comunidad. Ser un espacio virtual dinámico y en constante evolución, que se adapte a las nuevas tecnologías y tendencias en educación ambiental.
+Inspirar y empoderar a las personas para que tomen acciones concretas en favor del cuidado del agua en su vida diaria y en sus comunidades.
+Contribuir a la construcción de un futuro más sostenible, donde el agua sea valorada y protegida como un bien común."
             textColor="green"
             sx={{ fontFamily: "Montserrat, sans-serif", fontWeight: "bold" }}
           />

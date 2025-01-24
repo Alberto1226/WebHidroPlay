@@ -58,7 +58,8 @@ function HeaderBanner() {
           justifyItems: "right",
           height: "100%", // Asegura que ocupe toda la altura disponible
           width: "100%",
-          
+          display: "flex",
+          justifyContent: "flex-end",
           //paddingRight: "4vw",
         }}
       >

@@ -45,7 +45,7 @@ function Comics() {
         backgroundRepeat: "no-repeat",
         color: "white",
         py: 8,
-        minHeight: "75vh",
+        minHeight: "85vh",
         position: "relative", // Hace que los elementos hijos se restrinjan al contenedor
         overflow: "hidden", // Asegura que nada salga del contenedor
       }}

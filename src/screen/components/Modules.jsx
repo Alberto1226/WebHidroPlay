@@ -38,7 +38,7 @@ function Modules() {
         backgroundRepeat: "no-repeat",
         color: "white",
         py: 8,
-        minHeight: '75vh',
+        minHeight: '85vh',
       }}
     >
       <Container maxWidth="lg">
