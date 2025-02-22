@@ -1,0 +1,158 @@
+/* .magazine {
+    margin: 0 auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .magazine .page {
+    height: 100%;
+  }
+  
+  .magazine .page img {
+    max-width: 100%;
+    height: 100%;
+  }
+   */
+   .flipbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .page-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .allcomics-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Contenedor del selector */
+.comic-selector-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  /* Estilos del selector */
+  .comic-selector {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #1a73e8, #0044cc);
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    text-align: center;
+  }
+  
+  /* Estilos de la flecha */
+  .custom-arrow {
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animación de la flecha al enfocar */
+  .comic-selector:focus + .custom-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Cambios al pasar el mouse */
+  .comic-selector:hover {
+    background: linear-gradient(135deg, #1662c6, #0038a6);
+  }
+  
+  /* Cambios cuando se selecciona */
+  .comic-selector:focus {
+    background: linear-gradient(135deg, #0f4ea0, #002b7a);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos de las opciones desplegables */
+  .comic-selector option {
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+ /* Spinner de carga */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #ff3b3b;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-container p {
+    font-size: 1rem;
+    color: #ff3b3b;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Responsividad */
+  @media screen and (max-width: 600px) {
+    .flipbook-container {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .page {
+      width: 100%;
+      height: auto;
+    }
+  
+    .comic-selector {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }

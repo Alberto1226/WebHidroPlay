@@ -10,6 +10,10 @@ import bouncingSvg1 from "../../assets/svg/moni.svg";
 import bouncingSvg2 from "../../assets/svg/Recurso 25.svg";
 import bouncingSvg3 from "../../assets/svg/ajolote.svg";
 import bouncingSvg4 from "../../assets/svg/iconoar.svg";
+import Comic1 from "./Comics/Example";
+import ComicViewer from "./Comics/turn";
+import FlipBook from "./Comics/FlipPage";
+import AllComics from "./Comics/AllComics";
 
 function Comics() {
   const comics = [
@@ -35,6 +39,13 @@ function Comics() {
     }
   `;
 
+  const images = [
+    "https://res.cloudinary.com/dldwyf0jg/image/upload/v1734977184/hydroplay/modulos/pxc2acq14khrsoyg8645.png",
+    "https://res.cloudinary.com/dldwyf0jg/image/upload/v1734977184/hydroplay/modulos/pxc2acq14khrsoyg8645.png",
+    "https://res.cloudinary.com/dldwyf0jg/image/upload/v1734977184/hydroplay/modulos/pxc2acq14khrsoyg8645.png",
+    "https://res.cloudinary.com/dldwyf0jg/image/upload/v1734977184/hydroplay/modulos/pxc2acq14khrsoyg8645.png",
+  ];
+
   return (
     <Box
       id="comics"
@@ -51,33 +62,6 @@ function Comics() {
       }}
     >
       <Box sx={{ ml: 2, position: "relative" }}>
-        <Typography
-          variant="h3"
-          color="#9359b4"
-          component="h2"
-          gutterBottom
-          sx={{
-            fontSize: { xs: "2rem", sm: "3rem" }, // Smaller font size on mobile
-            textAlign: { xs: "center", sm: "left" },
-            fontFamily: "Montserrat, sans-serif",
-            fontWeight: "bold", // Center text on mobile, left-align on larger screens
-          }}
-        >
-          Comics AR
-        </Typography>
-
-        <Typography
-          variant="body1"
-          color="#4972cf"
-          paragraph
-          sx={{
-            fontSize: { xs: "0.9rem", sm: "1rem" }, // Smaller font size on mobile
-            textAlign: { xs: "center", sm: "left" }, // Center text on mobile, left-align on larger screens
-          }}
-        >
-          Disfruta de los Comics AR de HIDROPLAY desde tu dispositivo móvil.
-        </Typography>
-
         <Box
           sx={{
             position: "absolute",
@@ -85,7 +69,8 @@ function Comics() {
             justifyContent: "center",
             alignItems: "center",
             left: { xs: "-5%", md: "70%" },
-            top: { xs: "60%" },
+            top: { xs: "50%", md: "-10%"},
+            bottom: { xs: "0%", md: "170%" },
             transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
@@ -95,8 +80,7 @@ function Comics() {
             alt="Bouncing SVG 1"
             sx={{
               position: "absolute",
-              bottom: { xs: "0%", md: "100%" }, // Adjust bottom positioning for mobile
-              left: { xs: "50%", md: "60%" }, // Adjust left positioning for mobile
+              
               width: { xs: "120px", md: "160px" },
               height: { xs: "120px", md: "160px" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
@@ -113,7 +97,7 @@ function Comics() {
             alignItems: "center",
             left: { xs: "70%", sm: "80%" },
             top: { xs: "80%" },
-            display: {xs:'none'},
+            display: { xs: "none" },
             transform: { xs: "translateX(-50%)", sm: "none" }, // Center horizontally on mobile
           }}
         >
@@ -127,7 +111,7 @@ function Comics() {
               left: { xs: "10%", md: "-350%" }, // Adjust left positioning for mobile
               width: { xs: "120px", md: "160px" },
               height: { xs: "120px", md: "160px" },
-              display: {xs:'none'},
+              display: { xs: "none" },
               animation: `${bounceAnimation} 2s infinite ease-in-out`,
               transform: { xs: "translateX(-50%)", sm: "none" }, // Center the image horizontally on mobile
             }}
@@ -135,71 +119,7 @@ function Comics() {
         </Box>
       </Box>
 
-      <Box sx={{ p: 3 }}>
-        <Grid container spacing={4}>
-          {comics.map((comic, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <ComicCard
-                image={comic.image}
-                title={comic.title}
-                comicPages={comic.pages}
-              />
-            </Grid>
-          ))}
-        </Grid>
-
-        <Box
-          sx={{
-            position: "absolute",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            left: { xs: "-5%" },
-            top: "90%",
-            mt: 4,
-          }}
-        >
-          <Box
-            component="img"
-            src={bouncingSvg3}
-            alt="Bouncing SVG 2"
-            sx={{
-              position: "absolute",
-              bottom: "200%",
-              left: "-350%",
-              width: { xs: "120px", md: "160px" },
-              height: { xs: "120px", md: "160px" },
-              animation: `${bounceAnimation} 2s infinite ease-in-out`,
-            }}
-          />
-        </Box>
-        <Box
-          sx={{
-            position: "absolute",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            top: "90%",
-            left: { xs: "70%", md: "80%" },
-            mt: 4,
-          }}
-        >
-          <Box
-            component="img"
-            src={bouncingSvg4}
-            alt="Bouncing SVG 2"
-            sx={{
-              position: "absolute",
-              bottom: "200%",
-              display: "none",
-              left: "-350%",
-              width: { xs: "120px", md: "160px" },
-              height: { xs: "120px", md: "160px" },
-              animation: `${bounceAnimation} 2s infinite ease-in-out`,
-            }}
-          />
-        </Box>
-      </Box>
+      <AllComics />
     </Box>
   );
 }

@@ -11,6 +11,7 @@ import Navbar from "./screen/components/NavBar/NavBar";
 import HeaderBanner from "./screen/components/HeaderBanner";
 import Welcome from "./screen/components/Welcome";
 
+
 function App() {
   useEffect(() => {
     const sections = document.querySelectorAll(".section");

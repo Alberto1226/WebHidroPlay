@@ -42,13 +42,19 @@ function MobileApp() {
       <Container maxWidth="xl" sx={{ textAlign: "center" }}>
         <Grid container spacing={4} alignItems="center">
           {/* Left Image Section */}
-          <Grid item xs={12} md={5} display="flex" justifyContent="right">
+          <Grid
+            item
+            xs={12}
+            md={5}
+            display="flex"
+            justifyContent={{ xs: "center", md: "right" }}
+          >
             <Box
               component="img"
               src={leftImage}
               alt="Left Image"
               sx={{
-                maxWidth: "50%",
+                maxWidth: { xs: "80%", md: "50%" }, // Más grande en móvil
                 height: "auto",
                 borderRadius: 2,
               }}
